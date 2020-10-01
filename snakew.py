@@ -15,6 +15,7 @@ while no_of_chance < chance:
 
     if user_input == cmp_input:
             print("MATCH TIE..BOTH SCORES ARE ZERO\n")
+#if user has input s for snake
 
     if user_input == "s" and cmp_input == "w":
         human_pt = human_pt + 1
@@ -28,7 +29,7 @@ while no_of_chance < chance:
         print(f"YOUR GUESS IS {user_input} AND COMPUTER GUESS IS {cmp_input}")
         print(f"YOUR SCORE IS {human_pt} ANS COMPUTER SCORE IS {computr_pt}")
 
-
+#if user has input w for water
 
     elif user_input == "w" and cmp_input == "s":
         computr_pt = computr_pt + 1
@@ -41,8 +42,8 @@ while no_of_chance < chance:
         print("YOU GAINED 1 POINT..!!")
         print(f"YOUR GUESS IS {user_input} AND COMPUTER GUESS IS {cmp_input}")
         print(f"YOUR SCORE IS {human_pt} AND COMPUTER SCORE IS {computr_pt}")
-
-
+        
+# if user has inpur g for gun        
 
     elif user_input == "g" and cmp_input == "s":
         human_pt = human_pt + 1
@@ -61,5 +62,15 @@ while no_of_chance < chance:
 
     no_of_chance = no_of_chance + 1
     print(f"{chance - no_of_chance} is left outof {chance}\n")
+    
+ print("Game over")
+
+if computer_point > human_point:
+    print("Computer wins and you loose")
+
+if computer_point < human_point:
+    print("you win and computer loose")
+
+print(f"your point is {human_point} and computer point is {computer_point}")
 
 
